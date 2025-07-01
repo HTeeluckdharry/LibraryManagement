@@ -28,7 +28,7 @@ On Visual Studio 2022:
 ## Update Database
 
 - Go to Tools > NuGet Package Manager > Package Manager Console.
-- In the console, Write `Add-Migration` initial
+- In the console, Write `Add-Migration initial`
 - Next `Update-Database`.
 
   This 2 commands will create the database and fill in dummy data.
