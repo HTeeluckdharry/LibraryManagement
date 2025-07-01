@@ -14,6 +14,7 @@ namespace LibraryManagement
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
 
+            // Directories needed when adding pictures on winform UI
             try
             {
                 if (!Directory.Exists("./images/customer"))

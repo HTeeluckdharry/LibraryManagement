@@ -12,7 +12,7 @@ namespace LibraryManagement.Data
         {
             context = new LibraryDbContext();
         }
-
+        // Results to be able to search up the database
         public List<Result> CustomerSearch(string query)
         {
             List<Customer> customers = context.Customers

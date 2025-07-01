@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace LibraryManagement.mvvm.viewModel
-{
+{   
     public class AddRemoveViewModel: INotifyPropertyChanged
     {
         
@@ -217,7 +217,7 @@ namespace LibraryManagement.mvvm.viewModel
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
-
+        //Fuction to add books
         internal void OnBookInsert()
         {
             string newPath = "./images/book/" + Path.GetFileName(Image);
@@ -257,6 +257,7 @@ namespace LibraryManagement.mvvm.viewModel
             }
         }
 
+        //Fuction to delete books
         internal void OnBookDelete()
         {
             File.Delete(Image!);
@@ -264,6 +265,7 @@ namespace LibraryManagement.mvvm.viewModel
             Console.WriteLine("DELETE: ", Title, Genre, Year, Image);
         }
 
+        //Fuction to add Customer
         internal void onCustomerInsert()
         {
             string newPath = "./images/customer/" + Path.GetFileName(CustomerImage);
@@ -305,11 +307,13 @@ namespace LibraryManagement.mvvm.viewModel
             }
         }
 
+        //Fuction to delete Customer
         internal void onCustomerDelete()
         {
             throw new NotImplementedException();
         }
 
+        //Fuction to add Authors
         internal void onAuthorInsert()
         {
             using (var context = new LibraryDbContext())
@@ -350,6 +354,7 @@ namespace LibraryManagement.mvvm.viewModel
             }
         }
 
+        //Fuction to delete authors
         internal void onAuthorDelete()
         {
             throw new NotImplementedException();

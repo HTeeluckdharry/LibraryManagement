@@ -12,7 +12,7 @@ namespace LibraryManagement.Data
     {
         public static void InitialiseData(LibraryDbContext dbContext)
         {
-            // Only seed if the database is empty
+            // Only seed if the database is empty, Dummy Data
             if (dbContext.Books.Any() || dbContext.Authors.Any() || dbContext.Customers.Any())
                 return;
             // Authors
